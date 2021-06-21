@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Button } from "./components/Button";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Hello World</h1>
+      <h3>Eai, Mundão, tudo certo?</h3>
+
+      <Button text="Clica aqui" />
+      <Button text="Não chega perto" />
+      <Button>Não tenho props.text :o, tudo aqui é um children</Button>
+      <Button />
     </div>
   );
 }
 
 export default App;
+
+// Por que usar componentes funcionais?
+// R: Pois as APIs mais recentes só funcionarão nos componentes
+//    funcionais, nas classes não ;(
